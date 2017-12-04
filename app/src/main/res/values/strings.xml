@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">classSelection3</string>
+    <string name="loginTxt">Login</string>
+    <string name="passWordTxt">Password</string>
+    <string name="loginHint">Enter a user name</string>
+    <string name="loginBtnText">Login</string>
+    <string name="loginSuccess">Successful Login</string>
+</resources>
