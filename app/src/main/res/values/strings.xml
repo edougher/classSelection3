@@ -5,4 +5,40 @@
     <string name="loginHint">Enter a user name</string>
     <string name="loginBtnText">Login</string>
     <string name="loginSuccess">Successful Login</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="phone">Phone#</string>
+    <string-array name="months">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string name="dob">Date of Birth</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="certificate">Certificate</string>
+    <string name="twoYear">Associate Degree</string>
+    <string name="txt">Major</string>
+    <string name="nextBtn">Next</string>
+
+    <string-array name="listCert">
+        <item>Android Certificate</item>
+        <item>iOS Certificate</item>
+    </string-array>
+
+    <string-array name="listMajor">
+        <item>Digital Media</item>
+        <item>Mobile Application Development</item>
+        <item>Web Development</item>
+    </string-array>
 </resources>

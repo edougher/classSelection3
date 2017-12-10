@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-private EditText username;
-private EditText userPassword;
-private Button button;
+
 
 
     @Override
@@ -22,26 +21,37 @@ private Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText txtLogin = (EditText) findViewById(R.id.loginTxt);
-        final EditText passwordLogin = (EditText) findViewById(R.id.passWord);
-        Button button = (Button) findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener() {
+
+        final TextView txtLogin = (TextView) findViewById(R.id.loginTxt);
+        final TextView txtPassword = (TextView) findViewById(R.id.passWord);
+        Button btnLogin = (Button) findViewById(R.id.button);
+
+       btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login(txtLogin.getText().toString(), passwordLogin.getText().toString());
+                login(txtLogin.getText().toString(), txtPassword.getText().toString());
             }
         });
 
     }
 
-    public void login(String s, String toString) {
+    private void login(String userName, String userPassword) {
 
-        if ((username.equals("Erin") && (userPassword.equals("password")))) {
-            Intent intent = new Intent(MainActivity.this, loginSuccess.class);
-            startActivity(intent);
+        if ((userName.equals("Erin") && (userPassword.equals("password")))) {
+            startActivity(new Intent(MainActivity.this, Main2Activity.class));
         } else {
-            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Invalid login", Toast.LENGTH_SHORT).show();
         }
     }
-}
+
+
+
+
+
+
+
+    }
+
+
+
